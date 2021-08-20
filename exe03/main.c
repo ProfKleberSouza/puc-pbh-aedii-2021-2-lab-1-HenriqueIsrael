@@ -1,18 +1,21 @@
 #include <stdio.h>
 #include "functions.h"
+#define MAX 10
 
 int main() {
-
-    int a, b, s;
   
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  int vet[MAX], i, menor, maior, n;
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  scanf("%d",&n);
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  for(i=0;i<n;i++){
+    scanf("%d",&vet[i]);
+  }
 
+  menor_maior(vet, n, &menor, &maior);
+
+  printf("MENOR = %d\n",menor);
+  printf("MAIOR = %d\n",maior);
+  
   return(0);
 }

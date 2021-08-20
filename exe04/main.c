@@ -3,16 +3,11 @@
 
 int main() {
 
-    int a, b, s;
+    char string[100];
   
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  fgets(string,100,stdin);
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
-
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  numero_vogais(string);
 
   return(0);
 }
