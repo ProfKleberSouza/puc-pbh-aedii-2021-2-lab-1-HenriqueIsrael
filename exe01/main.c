@@ -3,7 +3,7 @@
 
 int main() {
 
-    int a, b, s ;
+    int a, b, s;
   
   // ENTRADA DE DADOS
   scanf("%d %d", &a, &b);
