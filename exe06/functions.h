@@ -1,2 +1,5 @@
+#include <math.h>
 
-int somar(int n1, int n2);
+int potencia (int x, int n){
+    return pow(x,n);
+}
