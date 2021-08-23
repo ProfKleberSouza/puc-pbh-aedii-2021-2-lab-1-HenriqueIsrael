@@ -1,6 +1,8 @@
-#include <math.h>
-
 int potencia (int x, int n){
-    int potencia = pow(x,n);
-    return potencia;
+    if(n==0){
+        return 1;
+    }
+    else{
+        return x*potencia(x,n-1);
+    }
 }
