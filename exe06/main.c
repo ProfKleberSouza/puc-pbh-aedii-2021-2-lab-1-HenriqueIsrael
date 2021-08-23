@@ -9,7 +9,6 @@ int main() {
 
   s = potencia(n1,n2);
 
-  
   printf("%d\n", s);
 
   return(0);
