@@ -8,7 +8,7 @@ int main() {
   
   fgets(palavra,sizeof(palavra),stdin);
 
-  final = strlen(palavra) - 2;
+  final = strlen(palavra) - 1;
 
   if(is_palindromo(palavra,0,final) == false){
     printf("NAO");
