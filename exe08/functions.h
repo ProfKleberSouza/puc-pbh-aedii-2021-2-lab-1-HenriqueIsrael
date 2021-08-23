@@ -8,7 +8,8 @@ bool is_palindromo(char palavra[],int inicio, int final){
             is_palindromo(palavra, inicio, final);
             return true;
         }
-        else
+        else{
             return false;
+        }    
     }
 }

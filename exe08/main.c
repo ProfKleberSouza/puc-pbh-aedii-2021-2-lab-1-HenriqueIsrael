@@ -10,11 +10,12 @@ int main() {
 
   final = strlen(palavra) - 2;
 
-  if(is_palindromo(palavra,0,final) == false)
+  if(is_palindromo(palavra,0,final) == false){
     printf("NAO");
+  }
 
-  if(is_palindromo(palavra,0,final)== true)
+  if(is_palindromo(palavra,0,final) == true){
     printf("SIM");
-    
+  }
   return(0);
 }
