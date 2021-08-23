@@ -1,5 +1,6 @@
 #include <math.h>
 
 int potencia (int x, int n){
-    return pow(x,n);
+    int potencia = pow(x,n);
+    return potencia;
 }
