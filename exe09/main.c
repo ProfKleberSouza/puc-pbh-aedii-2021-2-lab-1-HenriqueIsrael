@@ -4,15 +4,20 @@
 int main() {
 
     int a, b, s;
+    char placar[200];
   
   // ENTRADA DE DADOS
   scanf("%d %d", &a, &b);
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  criar_placar(a,b,placar);
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  for(s=0;s<b;s++){
+    possivel_placar(a,b,placar,s);
+  }
+
+  if(a>1 && b>1){
+    falta_placar(a,b,placar);
+  }
 
   return(0);
 }
