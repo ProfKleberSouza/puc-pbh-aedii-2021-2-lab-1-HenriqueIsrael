@@ -1,2 +1,25 @@
+#include <stdio.h>
+#include <math.h>
 
-int somar(int n1, int n2);
+void binario(int num, int bin[], int n){
+    int i = 0;
+    int aux = num;
+    
+    for(int k = 0; k<=n; k++){
+        bin[k] = 0;
+    }
+
+    while(aux>0){
+        bin[i] = aux % 2;
+        i++;
+        aux /=2;
+    }
+    printf("\n");
+    for(int j = n-1; j >= 0; j--){
+        printf("%d ",bin[j]);
+    }
+    if(num < pow(2, n)-1){
+        num++;
+        binario(num, bin, n);
+    }
+}

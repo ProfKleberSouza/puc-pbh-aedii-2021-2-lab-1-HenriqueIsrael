@@ -1,18 +1,20 @@
 #include <stdio.h>
 #include "functions.h"
+#define MAX 500
 
 int main() {
 
-    int a, b, s;
-  
+    int n;
+    int v[MAX]; 
+
   // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  scanf("%d",&n);
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
-
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  if(n==0)
+    printf("0");
+  
+  else
+    binario(0,v,n);
 
   return(0);
 }
